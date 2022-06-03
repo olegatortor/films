@@ -25,16 +25,40 @@ for (let i = 0; i < 2; i++) {
     const lastFilm = prompt("Один из последних просмотренных фильмов?", ""),
           lastFilmGrade = prompt("На сколько оцените его?", "");
     if (lastFilm == '' || lastFilm == null || lastFilm.length > 50 || lastFilmGrade == '' || lastFilmGrade == null) {
+        console.log('false');
         i--;
         continue;
     }
     personalMovieDB.movies[lastFilm] = lastFilmGrade;
 }
 
+// let i = 0;
+// while  (i < 2) {
+//     const lastFilm = prompt("Один из последних просмотренных фильмов?", ""),
+//           lastFilmGrade = prompt("На сколько оцените его?", "");
+//     i++;
+//     if (lastFilm == '' || lastFilm == null || lastFilm.length > 50 || lastFilmGrade == '' || lastFilmGrade == null) {
+//         console.log('false');
+//         i--;
+//         continue;
+//     } else {
+//         personalMovieDB.movies[lastFilm] = lastFilmGrade;
+//     }
+// }
+
+// let i = 0;
+// do {    
+//     const lastFilm = prompt("Один из последних просмотренных фильмов?", ""),
+//           lastFilmGrade = prompt("На сколько оцените его?", "");
+//     i++;
+    
+//     if (lastFilm == '' || lastFilm == null || lastFilm.length > 50 || lastFilmGrade == '' || lastFilmGrade == null) {
+//         console.log('false');
+//         i--;
+//     } else {
+//         personalMovieDB.movies[lastFilm] = lastFilmGrade;
+//     }
+// }
+// while (i < 2);
+
 console.log(personalMovieDB);
-
-
-
-/* Задание на урок:
-
-4) Потренироваться и переписать цикл еще двумя способами*/
